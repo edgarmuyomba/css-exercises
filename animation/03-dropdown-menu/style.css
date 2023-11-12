@@ -4,7 +4,7 @@
   text-align: center;
   line-height: 50px;
   font-size: 15px;
-  color: rgb(247, 247, 247);
+  color: rgb(247, 247, 247); 
   cursor: pointer;
 }
 
@@ -27,6 +27,22 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+  transform-origin: top;
+  animation: dropdown .5s ease-in-out;
+}
+
+@keyframes dropdown {
+  from {
+    transform: scaleY(0);
+  }
+  
+  80% {
+    transform: scaleY(1.4);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
 }
 
 
